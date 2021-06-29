@@ -1,3 +1,7 @@
+<%
+	
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +27,7 @@ input{
 		<form action="calc3" method="post">
 			<table>
 				<tr>
-					<td class="output" colspan="4">0</td>
+					<td class="output" colspan="4">${3+4}</td>
 				</tr>				
 				<tr>
 					<td><input type="submit" name="operator" value="CE" /></td>
@@ -35,19 +39,19 @@ input{
 					<td><input type="submit" name="value" value="7" /></td>
 					<td><input type="submit" name="value" value="8" /></td>
 					<td><input type="submit" name="value" value="9" /></td>
-					<td><input type="submit" name="operator" value="×" /></td>
+					<td><input type="submit" name="operator" value="*" /></td>
 				</tr>				
 				<tr>
 					<td><input type="submit" name="value" value="4" /></td>
 					<td><input type="submit" name="value" value="5" /></td>
 					<td><input type="submit" name="value" value="6" /></td>
-					<td><input type="submit" name="operator" value="－" /></td>
+					<td><input type="submit" name="operator" value="-" /></td>
 				</tr>				
 				<tr>
 					<td><input type="submit" name="value" value="1" /></td>
 					<td><input type="submit" name="value" value="2" /></td>
 					<td><input type="submit" name="value" value="3" /></td>
-					<td><input type="submit" name="operator" value="＋" /></td>
+					<td><input type="submit" name="operator" value="=�" /></td>
 				</tr>							
 				<tr>
 					<td></td>
