@@ -1,28 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
-<%
-	int num = 0;
-	String num_ = request.getParameter("num");
-	if(num_ != null && !num_.equals(""))
-		num = Integer.parseInt(num_);
-	
-	String result;
-	
-	if(num%2 != 0){
-		result = "홀수";
-	}
-	else{
-		result = "짝수";
-	}
-%>    
+    pageEncoding="UTF-8"%>    
+   
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<%
+	pageContext.setAttribute("result", "hello");
+%>
 <body>
-	<%=result %> 입니다.
+	<%=request.getAttribute("result") %> 입니다. <br >
+	${requestScope.result}<br >
+	${names[0] }<br >
+	${names[1] }<br >
+	${notice.id}<br >
+	${notice.title} <br >
+	${result}<br >
+	${empty param.num?'값이 비어있습니다.':param.num/2} <br >
+	${header.accept } <br >
+	
 </body>
 </html>
