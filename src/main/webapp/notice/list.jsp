@@ -10,7 +10,7 @@
 	String sql = "SELECT * FROM NOTICE";
 	
 	Class.forName("oracle.jdbc.driver.OracleDriver");
-	Connection con = DriverManager.getConnection(url, "oracle_newlec", "newlec");
+	Connection con = DriverManager.getConnection(url, "", "");
 	Statement st = con.createStatement();
 	ResultSet rs = st.executeQuery(sql);
 %>
